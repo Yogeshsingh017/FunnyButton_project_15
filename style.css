@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sora:wght@500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(124, 239, 220);
+  flex-direction:column;
+  grid-gap: 50px;
+}
+h1{
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+.container{
+  height: 400px;
+  width: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://clickkarkedikhao.glitch.me/bgimg.jpg");
+  box-shadow: 0 0 30px rgb(248, 8, 8);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  grid-gap: 10%;
+  justify-content: space-around;
+  flex-direction: column;
+  color: yellow;
+  padding-top: 50px;
+}
+.btn-div{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.btn-div .btn{
+  height: 30%;
+  background: rgb(236, 224, 66);
+  display: flex;
+  align-items: center;
+  font-weight: 1000;
+  justify-content: center;
+  color: black;
+  text-transform: uppercase;
+  width:60px;
+  cursor: pointer;
+  border-radius: 1px;
+  box-shadow: 0 0 20px black;
+  transition: 0.1s all;
+  font-size:12px;
+}
+a{
+    padding: 20px;
+    background: white;
+    text-decoration:none;
+    color: white;
+    background-color: red;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 5px;
+}

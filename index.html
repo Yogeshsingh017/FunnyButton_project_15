@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Click Me!</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Are You a Beautiful ?</h1>
+        <div class="btn-div">
+            <div class="yes btn">yes</div>
+            <div class="no btn">no</div>
+        </div>
+    </div>
+    <a href="https://www.youtube.com/@yogeshsinghvlog1750">Subcribe My Channel</a>
+
+
+
+    <script>
+
+        let noBtn = document.querySelector(".no");
+        let yesBtn = document.querySelector(".yes");
+        let text = document.querySelector("h1");
+        let audio1 = new Audio("https://clickkarkedikhao.glitch.me/sfx1.mp3");
+        let audio2 = new Audio("https://clickkarkedikhao.glitch.me/sfx2.mp3");
+        const yourName = prompt("Enter Your Name");
+
+        text.innerHTML = "" + yourName + ", Are You a Beautiful ?";
+        noBtn.addEventListener("click", event => {
+            let num1 = Math.floor(Math.random() * 200);
+            let num2 = Math.floor(Math.random() * 150);
+            noBtn.style.transform = "translateX(-" + num1 + "px) translateY(-" + num2 + "px)";
+            audio1.play();
+            alert("So said 😰😭😭");
+        })
+        yesBtn.addEventListener('click', evetn => {
+            audio2.play();
+            alert("April fool banaya 🤣😂😂");
+        })
+
+    </script>
+
+</body>
+
+</html>
